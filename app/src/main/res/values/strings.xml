@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">FinalProject</string>
+    <string name="app_name1">admin</string>
+    <string name="app_name2">user</string>
+    <string name="app_name3">items</string>
+    <string name="app_name4">clothes</string>
+    <string name="app_name5">devices</string>
+    <string name="app_name6">book</string>
+    <string name="app_name7">male</string>
+    <string name="app_name8">female</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
