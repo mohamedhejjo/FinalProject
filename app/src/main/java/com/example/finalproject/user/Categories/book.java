@@ -1,4 +1,4 @@
-package com.example.finalproject.Categories;
+package com.example.finalproject.user.Categories;
 
 import androidx.appcompat.app.AppCompatActivity;
 

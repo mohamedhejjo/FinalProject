@@ -1,4 +1,4 @@
-package com.example.finalproject.Categories;
+package com.example.finalproject.admin.Categories;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,15 +11,15 @@ import com.example.finalproject.R;
 import com.example.finalproject.user.Clothes.userfemale;
 import com.example.finalproject.user.Clothes.usermale;
 
-public class clothes extends AppCompatActivity {
+public class clothesadmin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.clothes);
+        setContentView(R.layout.clothesadmin);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ImageButton male=findViewById(R.id.malename);
-        ImageButton female=findViewById(R.id.femalename);
+        ImageButton male=findViewById(R.id.malenameadmin);
+        ImageButton female=findViewById(R.id.femalenameadmin);
         male.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

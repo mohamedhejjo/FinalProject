@@ -4,12 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user.userCategories">
+    tools:context=".admin.adminCategories">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/text"
+        android:text="Welcome Admin"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="280dp"
         android:layout_height="200dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="80dp"
         app:cardCornerRadius="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -20,7 +33,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <ImageButton
-                android:id="@+id/Clotheshome"
+                android:id="@+id/Clotheshomeadmin"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:src="@drawable/clothes"
@@ -52,7 +65,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <ImageButton
-                android:id="@+id/deviceshome"
+                android:id="@+id/deviceshomeadmin"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:src="@drawable/computer"
@@ -85,7 +98,7 @@
             android:orientation="vertical"
             >
             <ImageButton
-                android:id="@+id/bookhome"
+                android:id="@+id/bookhomeadmin"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:src="@drawable/book"

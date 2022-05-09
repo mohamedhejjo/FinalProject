@@ -1,4 +1,4 @@
-package com.example.finalproject;
+package com.example.finalproject.user;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
-import com.example.finalproject.Categories.book;
-import com.example.finalproject.Categories.clothes;
-import com.example.finalproject.Categories.devices;
+import com.example.finalproject.user.Categories.book;
+import com.example.finalproject.user.Categories.clothes;
+import com.example.finalproject.user.Categories.devices;
+import com.example.finalproject.R;
 
-public class viewCategories extends AppCompatActivity {
+public class userCategories extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

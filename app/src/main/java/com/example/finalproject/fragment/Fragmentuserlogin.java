@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.finalproject.R;
-import com.example.finalproject.viewCategories;
+import com.example.finalproject.user.userCategories;
 
 
 public class Fragmentuserlogin extends Fragment {
@@ -25,7 +25,7 @@ public class Fragmentuserlogin extends Fragment {
         btnuser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity().getBaseContext(), viewCategories.class);
+                Intent intent = new Intent(getActivity().getBaseContext(), userCategories.class);
                 startActivity(intent);
             }
         });

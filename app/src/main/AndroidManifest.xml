@@ -10,32 +10,62 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject">
         <activity
+            android:name=".admin.Clothesa.female"
+            android:label="@string/app_name8"
+            android:parentActivityName=".admin.Clothesa.female"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Clothesa.male"
+            android:label="@string/app_name7"
+            android:parentActivityName=".admin.Clothesa.male"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Categories.devicesadmin"
+            android:label="@string/app_name5"
+            android:parentActivityName=".admin.adminCategories"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Categories.clothesadmin"
+            android:label="@string/app_name4"
+            android:parentActivityName=".admin.adminCategories"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Categories.bookadmin"
+            android:label="@string/app_name6"
+            android:exported="false"
+            android:parentActivityName=".admin.adminCategories"/>
+        <activity
+            android:name=".admin.adminCategories"
+            android:label="@string/app_name3"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
             android:name=".user.Clothes.userfemale"
             android:exported="false"
             android:label="@string/app_name8"
-            android:parentActivityName=".Categories.clothes" />
+            android:parentActivityName=".user.Categories.clothes" />
         <activity
             android:name=".user.Clothes.usermale"
             android:exported="false"
             android:label="@string/app_name7"
-            android:parentActivityName=".Categories.clothes" />
+            android:parentActivityName=".user.Categories.clothes" />
         <activity
-            android:name=".Categories.book"
+            android:name=".user.Categories.book"
             android:exported="false"
             android:label="@string/app_name6"
-            android:parentActivityName=".viewCategories" />
+            android:parentActivityName=".user.userCategories" />
         <activity
-            android:name=".Categories.devices"
+            android:name=".user.Categories.devices"
             android:exported="false"
             android:label="@string/app_name5"
-            android:parentActivityName=".viewCategories" />
+            android:parentActivityName=".user.userCategories" />
         <activity
-            android:name=".Categories.clothes"
+            android:name=".user.Categories.clothes"
             android:exported="false"
             android:label="@string/app_name4"
-            android:parentActivityName=".viewCategories" />
+            android:parentActivityName=".user.userCategories" />
         <activity
-            android:name=".viewCategories"
+            android:name=".user.userCategories"
             android:exported="false"
             android:label="@string/app_name3"
             android:parentActivityName=".MainActivity" />
@@ -60,8 +90,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
