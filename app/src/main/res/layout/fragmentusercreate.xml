@@ -84,14 +84,14 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/usercreate"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginBottom="324dp"
         android:layout_margin="10dp"
-        android:background="@drawable/for_logo"
-        android:text="Create"
+        android:background="@drawable/fragmentuttoncaolor"
+        android:text="@string/Create"
         android:textSize="24sp"
         />
 

@@ -81,14 +81,14 @@
             android:maxLength="20" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/adminlogin"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="10dp"
         android:layout_marginBottom="324dp"
-        android:background="@drawable/for_logo"
-        android:text="Login"
+        android:background="@drawable/fragmentuttoncaolor"
+        android:text="@string/Login"
         android:textSize="24sp" />
 
 

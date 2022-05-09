@@ -13,7 +13,7 @@
         android:background="@drawable/text"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Welcome to Gaza Store... admin"
+        android:text="@string/welcom_masseg2"
         android:textColor="@color/black"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,23 +40,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/loginadminhome"
             android:layout_width="187dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:text="Login"
+            android:text="@string/Login"
             android:textSize="24sp"
             android:background="@drawable/for_logo"
             />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/createadminhome"
             android:layout_width="187dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:padding="10dp"
-            android:text="Create"
+            android:text="@string/Create"
             android:textSize="24sp"
             android:background="@drawable/for_logo"
             />

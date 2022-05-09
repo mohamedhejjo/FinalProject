@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Welcome to the e-marketing program. If you want to join the program, please specify the method of entry"
+        android:text="@string/welcom_masseg"
         android:textColor="@color/black"
         android:textSize="23sp"
         android:layout_margin="10dp"
@@ -44,16 +44,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.486" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginadmin"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:text="Login as administrator"
-        android:textColor="@color/teal_200"
+        android:text="@string/Login_administrator"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:background="@drawable/for_logo"
         android:layout_margin="10dp"
         android:padding="10dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -61,13 +62,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.313" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginuser"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:text="Login as user"
+        android:text="@string/Login_user"
         android:textSize="20sp"
-        android:textColor="@color/teal_200"
+        android:textColor="@color/black"
         android:layout_margin="10dp"
         android:padding="10dp"
         android:background="@drawable/for_logo"

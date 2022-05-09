@@ -3,19 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/admin.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/book.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/clothes.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/devices.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentadmincreate.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentadminlogin.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentusercreate.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentuserlogin.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/splash.xml" value="0.12771739130434784" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/user.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/userfemale.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/usermale.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/viewcategories.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/drawable/for_logo.xml" value="0.108" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/drawable/fragmentuttoncaolor.xml" value="0.108" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/drawable/text.xml" value="0.108" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/admin.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/book.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/clothes.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/devices.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/fragmentadmincreate.xml" value="0.22" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/fragmentadminlogin.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/fragmentusercreate.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/fragmentuserlogin.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/splash.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/user.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/userfemale.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/usermale.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/zero1/AndroidStudioProjects/FinalProject/app/src/main/res/layout/viewcategories.xml" value="0.17074275362318841" />
       </map>
     </option>
   </component>
