@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Clothes"
+                android:text="@string/app_name4"
                 android:gravity="center"
                 android:textSize="24sp"
                 android:textColor="@color/purple_200"
@@ -61,7 +61,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="devices"
+                android:text="@string/app_name5"
                 android:gravity="center"
                 android:textSize="24sp"
                 android:textColor="@color/purple_200"
@@ -94,7 +94,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Book"
+                android:text="@string/app_name6"
                 android:gravity="center"
                 android:textSize="24sp"
                 android:textColor="@color/purple_200"
