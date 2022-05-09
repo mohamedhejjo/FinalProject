@@ -14,7 +14,7 @@
     <string name="Login"> تسجيل الدخول </string>
     <string name="Create">انشاء</string>
     <string name="welcom_masseg2">مرحبا بكم في متجر غزة ... مسؤول</string>
-
+    <string name="welcom_masseg3">مرحبًا بالمشرف</string>
     <string name="welcom_masseg">أهلا بك في برنامج التسويق الإلكتروني. إذا كنت ترغب في الانضمام إلى البرنامج ، يرجى تحديد طريقة الدخول</string>
 
     <string name="hello_blank_fragment">مرحبا جزء فارغ</string>

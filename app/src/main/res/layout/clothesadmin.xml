@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/text"
-        android:text="Welcome Admin"
+        android:text="@string/welcom_masseg3"
         android:textSize="28sp"
         android:gravity="center"
         android:layout_margin="10dp"

@@ -14,7 +14,7 @@
     <string name="Login">Loginr</string>
     <string name="Create">Create</string>
     <string name="welcom_masseg2">Welcome to Gaza Store... admin</string>
-
+    <string name="welcom_masseg3">Welcome admin</string>
 
     <string name="welcom_masseg">Welcome to the e-marketing program. If you want to join the program, please specify the method of entry</string>
 </resources>
