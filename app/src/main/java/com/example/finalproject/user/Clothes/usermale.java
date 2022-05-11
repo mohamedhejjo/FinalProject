@@ -1,10 +1,16 @@
 package com.example.finalproject.user.Clothes;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
 import com.example.finalproject.R;
+import com.example.finalproject.RecykelViewuser.AdapterCotr;
+import com.example.finalproject.RecykelViewuser.ClassCotr;
+
+import java.util.ArrayList;
 
 public class usermale extends AppCompatActivity {
 
@@ -12,5 +18,17 @@ public class usermale extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.usermale);
+        ArrayList<ClassCotr> data=new ArrayList<>();
+        data.add(new ClassCotr("jacket",R.drawable.jacket));
+        data.add(new ClassCotr("shoe",R.drawable.shoe1));
+        data.add(new ClassCotr("jeans",R.drawable.jens));
+        data.add(new ClassCotr("hat",R.drawable.hat));
+
+        RecyclerView rv=findViewById(R.id.rec4);
+        AdapterCotr ad=new AdapterCotr(data);
+        rv.setAdapter(ad);
+        rv.hasFixedSize();
+        RecyclerView.LayoutManager lm=new LinearLayoutManager(this);
+        rv.setLayoutManager(lm);
     }
 }
