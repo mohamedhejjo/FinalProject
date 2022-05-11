@@ -1,15 +1,16 @@
 package com.example.finalproject.user;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageButton;
 
-import com.example.finalproject.user.Categories.book;
-import com.example.finalproject.user.Categories.clothes;
-import com.example.finalproject.user.Categories.devices;
+import com.example.finalproject.RecykelViewuser.AdapterCotr;
+import com.example.finalproject.RecykelViewuser.ClassCotr;
 import com.example.finalproject.R;
+
+import java.util.ArrayList;
 
 public class userCategories extends AppCompatActivity {
 
@@ -18,7 +19,7 @@ public class userCategories extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewcategories);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ImageButton imageclothes=findViewById(R.id.Clotheshome);
+     /*   ImageButton imageclothes=findViewById(R.id.Clotheshome);
         ImageButton imagecomputer=findViewById(R.id.deviceshome);
         ImageButton imagebook=findViewById(R.id.bookhome);
 
@@ -33,7 +34,18 @@ public class userCategories extends AppCompatActivity {
         imagebook.setOnClickListener(v -> {
             Intent intent=new Intent(getApplicationContext(), book.class);
             startActivity(intent);
-        });
+        });*/
+        ArrayList<ClassCotr> data=new ArrayList<>();
+        data.add(new ClassCotr("clothes",R.drawable.clothes));
+        data.add(new ClassCotr("book",R.drawable.book));
+        data.add(new ClassCotr("devices",R.drawable.computer));
 
+        RecyclerView rv=findViewById(R.id.rec);
+        AdapterCotr ad=new AdapterCotr(data);
+        rv.setAdapter(ad);
+        rv.hasFixedSize();
+        RecyclerView.LayoutManager lm=new LinearLayoutManager(this);
+        rv.setLayoutManager(lm);
     }
 }
+
