@@ -42,10 +42,7 @@ public class AdapterCotr extends RecyclerView.Adapter<HolderCotr> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            if (holder.textView.getText().equals("book")){
-                Intent intent=new Intent(context, book.class);
-                context.startActivity(intent);           }
-            else if(holder.textView.getText().equals("clothes")) {
+             if(holder.textView.getText().equals("clothes")) {
                 Intent intent=new Intent(context, clothes.class);
                 context.startActivity(intent);           }
             else if(holder.textView.getText().equals("devices")) {

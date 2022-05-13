@@ -6,12 +6,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".fragment.Fragmentuserlogin">
-
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/login"
+        />
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/fieldnumberuslogin"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="92dp"
+        android:layout_height="100dp"
         android:layout_margin="10dp"
         android:hint="Enter number"
         app:counterEnabled="true"
@@ -35,7 +41,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/fieldpassuserlogin"
         android:layout_width="match_parent"
-        android:layout_height="92dp"
+        android:layout_height="100dp"
         android:layout_margin="10dp"
         android:hint="Enterpass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"

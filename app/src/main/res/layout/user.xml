@@ -5,62 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".user.user">
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/text"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="Welcome to Gaza Store... user"
-        android:textColor="@color/black"
-        android:textSize="28sp"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpageruser"
+        android:layout_width="409dp"
+        android:layout_height="681dp"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayoutuser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentuser"
-        android:name="com.example.finalproject.fragment.FragmentuserCreate"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout="@layout/fragmentusercreate" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutuser"
+        android:layout_width="409dp"
+        app:tabTextColor="@color/red"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/userloginhome"
-            android:layout_width="187dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:padding="10dp"
-            android:text="@string/Login"
-            android:textSize="24sp"
-            android:background="@drawable/for_logo"
-            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/usercreatehome"
-            android:layout_width="187dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:padding="10dp"
-            android:text="@string/Create"
-            android:textSize="24sp"
-            android:background="@drawable/for_logo"
-            />
-    </LinearLayout>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+    </com.google.android.material.tabs.TabLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,60 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".admin.admin">
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/text"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="@string/welcom_masseg2"
-        android:textColor="@color/black"
-        android:textSize="28sp"
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpageradmin"
+        android:layout_width="409dp"
+        android:layout_height="681dp"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayoutadmin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentadmin"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-        android:name="com.example.finalproject.fragment.FragmentadminCreate"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutadmin"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/loginadminhome"
-            android:layout_width="187dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:text="@string/Login"
-            android:textSize="24sp"
-            android:background="@drawable/for_logo"
-            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/createadminhome"
-            android:layout_width="187dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:padding="10dp"
-            android:text="@string/Create"
-            android:textSize="24sp"
-            android:background="@drawable/for_logo"
-            />
-    </LinearLayout>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+    </com.google.android.material.tabs.TabLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

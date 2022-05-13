@@ -37,7 +37,6 @@ public class userCategories extends AppCompatActivity {
         });*/
         ArrayList<ClassCotr> data=new ArrayList<>();
         data.add(new ClassCotr("clothes",R.drawable.clothes));
-        data.add(new ClassCotr("book",R.drawable.book));
         data.add(new ClassCotr("devices",R.drawable.computer));
 
         RecyclerView rv=findViewById(R.id.rec);
