@@ -6,113 +6,103 @@
     android:layout_height="match_parent"
     tools:context=".admin.adminCategories">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/text"
-        android:text="@string/welcom_masseg3"
-        android:textSize="28sp"
-        android:gravity="center"
-        android:layout_margin="10dp"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="280dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="80dp"
-        app:cardCornerRadius="40dp"
+        android:id="@+id/cardView3"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:cardCornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/purple_200"
             android:orientation="vertical">
+
             <ImageButton
-                android:id="@+id/Clotheshomeadmin"
+                android:id="@+id/imageadmin1"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:src="@drawable/clothes"
                 android:scaleType="centerCrop"
-                />
+                android:src="@drawable/add" />
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="@string/app_name4"
+                android:layout_height="70dp"
                 android:gravity="center"
-                android:textSize="24sp"
-                android:textColor="@color/purple_200"
-                android:background="@color/red"
-                />
+                android:text="add"
+                android:textSize="30sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="280dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        app:cardCornerRadius="40dp"
+        android:id="@+id/cardView4"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.060000002">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/purple_200"
             android:orientation="vertical">
+
             <ImageButton
-                android:id="@+id/deviceshomeadmin"
+                android:id="@+id/imageadmin2"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:src="@drawable/computer"
                 android:scaleType="centerCrop"
-                />
+                android:src="@drawable/delete" />
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="@string/app_name5"
+                android:layout_height="70dp"
                 android:gravity="center"
-                android:textSize="24sp"
-                android:textColor="@color/purple_200"
-                android:background="@color/red"
-                />
+                android:text="delete"
+                android:textSize="30sp" />
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="280dp"
-        android:layout_height="200dp"
-        app:cardCornerRadius="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.24000001">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+            android:background="@color/purple_200"
+            android:orientation="vertical">
+
             <ImageButton
-                android:id="@+id/bookhomeadmin"
+                android:id="@+id/imageadmin3"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:src="@drawable/book"
                 android:scaleType="centerCrop"
-                />
+                android:src="@drawable/update" />
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="@string/app_name6"
+                android:layout_height="70dp"
                 android:gravity="center"
-                android:textSize="24sp"
-                android:textColor="@color/purple_200"
-                android:background="@color/red"
-                />
+                android:text="Update"
+                android:textSize="30sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

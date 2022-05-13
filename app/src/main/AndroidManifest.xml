@@ -10,27 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject">
         <activity
-            android:name=".admin.Clothesa.female"
+            android:name=".admin.Clothesa.addcolthes"
             android:label="@string/app_name8"
-            android:parentActivityName=".admin.Clothesa.female"
+            android:parentActivityName=".admin.Clothesa.addcolthes"
             android:exported="false" />
         <activity
-            android:name=".admin.Clothesa.male"
+            android:name=".admin.Clothesa.adddevices"
             android:label="@string/app_name7"
-            android:parentActivityName=".admin.Clothesa.male"
+            android:parentActivityName=".admin.Clothesa.adddevices"
             android:exported="false" />
         <activity
-            android:name=".admin.Categories.devicesadmin"
+            android:name=".admin.Categories.update"
             android:label="@string/app_name5"
             android:parentActivityName=".admin.adminCategories"
             android:exported="false" />
         <activity
-            android:name=".admin.Categories.clothesadmin"
+            android:name=".admin.Categories.add"
             android:label="@string/app_name4"
             android:parentActivityName=".admin.adminCategories"
             android:exported="false" />
         <activity
-            android:name=".admin.Categories.bookadmin"
+            android:name=".admin.Categories.delete"
             android:label="@string/app_name6"
             android:exported="false"
             android:parentActivityName=".admin.adminCategories"/>

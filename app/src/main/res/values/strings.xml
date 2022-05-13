@@ -6,8 +6,8 @@
     <string name="app_name4">clothes</string>
     <string name="app_name5">devices</string>
     <string name="app_name6">book</string>
-    <string name="app_name7">male</string>
-    <string name="app_name8">female</string>
+    <string name="app_name7">AddDevice</string>
+    <string name="app_name8">AddColthes</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Login_administrator">Login as administrator</string>
     <string name="Login_user">Login as user</string>
@@ -15,6 +15,16 @@
     <string name="Create">Create</string>
     <string name="welcom_masseg2">Welcome to Gaza Store... admin</string>
     <string name="welcom_masseg3">Welcome admin</string>
+    <string-array name="addcolthesadd">
+        <item>male </item>
+        <item>female</item>
+    </string-array>
+    <string-array name="adddeviceadd">
+        <item>laptop </item>
+        <item>mouse</item>
+        <item>keyboard</item>
+        <item>Play Station</item>
 
+    </string-array>
     <string name="welcom_masseg">Welcome to the e-marketing program. If you want to join the program, please specify the method of entry</string>
 </resources>

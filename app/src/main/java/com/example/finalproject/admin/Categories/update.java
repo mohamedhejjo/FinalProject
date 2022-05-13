@@ -6,12 +6,12 @@ import android.os.Bundle;
 
 import com.example.finalproject.R;
 
-public class bookadmin extends AppCompatActivity {
+public class update extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.bookadmin);
+        setContentView(R.layout.update);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

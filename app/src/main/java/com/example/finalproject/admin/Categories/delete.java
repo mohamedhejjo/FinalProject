@@ -6,12 +6,12 @@ import android.os.Bundle;
 
 import com.example.finalproject.R;
 
-public class devicesadmin extends AppCompatActivity {
+public class delete extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.devicesadmin);
+        setContentView(R.layout.delete);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

@@ -6,9 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageButton;
 import com.example.finalproject.R;
-import com.example.finalproject.admin.Categories.bookadmin;
-import com.example.finalproject.admin.Categories.clothesadmin;
-import com.example.finalproject.admin.Categories.devicesadmin;
 
 public class adminCategories extends AppCompatActivity {
 
@@ -17,20 +14,20 @@ public class adminCategories extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admincategories);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ImageButton imageclothes=findViewById(R.id.Clotheshomeadmin);
-        ImageButton imagecomputer=findViewById(R.id.deviceshomeadmin);
-        ImageButton imagebook=findViewById(R.id.bookhomeadmin);
+        ImageButton add=findViewById(R.id.imageadmin1);
+        ImageButton delete=findViewById(R.id.imageadmin2);
+        ImageButton update=findViewById(R.id.imageadmin3);
 
-        imageclothes.setOnClickListener(v -> {
-            Intent intent=new Intent(getApplicationContext(), clothesadmin.class);
+        add.setOnClickListener(v -> {
+            Intent intent=new Intent(getApplicationContext(), com.example.finalproject.admin.Categories.add.class);
             startActivity(intent);
         });
-        imagecomputer.setOnClickListener(v -> {
-            Intent intent=new Intent(getApplicationContext(), devicesadmin.class);
+        delete.setOnClickListener(v -> {
+            Intent intent=new Intent(getApplicationContext(), com.example.finalproject.admin.Categories.update.class);
             startActivity(intent);
         });
-        imagebook.setOnClickListener(v -> {
-            Intent intent=new Intent(getApplicationContext(), bookadmin.class);
+        update.setOnClickListener(v -> {
+            Intent intent=new Intent(getApplicationContext(), com.example.finalproject.admin.Categories.delete.class);
             startActivity(intent);
         });
 
