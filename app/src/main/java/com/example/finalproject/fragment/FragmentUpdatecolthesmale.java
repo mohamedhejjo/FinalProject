@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.finalproject.R;
 import com.example.finalproject.RecykelViewUserConterg.AdapterShowPrice;
+import com.example.finalproject.RecykelViewUserConterg.AdapterUbdate;
 import com.example.finalproject.RecykelViewUserConterg.ClassShowPrice;
 
 import java.util.ArrayList;
@@ -23,12 +24,12 @@ public class FragmentUpdatecolthesmale extends Fragment {
                              Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_updatecolthesmale, pernet, false);
         ArrayList<ClassShowPrice> data=new ArrayList<>();
-        data.add(new ClassShowPrice("male",R.drawable.male,"100","ee","male"));
-        data.add(new ClassShowPrice("female",R.drawable.female,"1000","ee","male"));
-        data.add(new ClassShowPrice("male",R.drawable.male,"3000","ee","male"));
-        data.add(new ClassShowPrice("female",R.drawable.female,"40000","ee","male"));
+        data.add(new ClassShowPrice("male",R.drawable.male,"100","egge","male"));
+        data.add(new ClassShowPrice("female",R.drawable.female,"1000","egge","male"));
+        data.add(new ClassShowPrice("male",R.drawable.male,"3000","eegg","male"));
+        data.add(new ClassShowPrice("female",R.drawable.female,"40000","egge","male"));
         RecyclerView rv=view.findViewById(R.id.rec8);
-        AdapterShowPrice ad=new AdapterShowPrice(data);
+        AdapterUbdate ad=new AdapterUbdate(data);
         rv.setAdapter(ad);
         rv.hasFixedSize();
         RecyclerView.LayoutManager lm=new LinearLayoutManager(pernet.getContext());

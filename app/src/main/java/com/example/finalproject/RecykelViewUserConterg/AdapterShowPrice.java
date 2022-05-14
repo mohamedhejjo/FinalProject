@@ -42,15 +42,6 @@ holder.price.setText(csp.getPrice());
         holder.pro.setText(csp.getPro());
         holder.female.setText(csp.getFemal());
 
-        holder.view.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            if (csp.getFemal().equals("female")||csp.getFemal().equals("male")){
-                Intent intent=new Intent(context, Updateprofinalcolthes.class);
-                intent.putExtra("ClassShowPrice",csp);
-                context.startActivity(intent);
-            } }
-        });
             holder.item.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

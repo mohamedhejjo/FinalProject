@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.finalproject.R;
 import com.example.finalproject.RecykelViewUserConterg.AdapterShowPrice;
+import com.example.finalproject.RecykelViewUserConterg.AdapterUbdate;
 import com.example.finalproject.RecykelViewUserConterg.ClassShowPrice;
 
 import java.util.ArrayList;
@@ -29,7 +30,7 @@ public class FragmentUpdatecolthesfemale extends Fragment {
         data.add(new ClassShowPrice("male",R.drawable.male,"500","ee","female"));
         data.add(new ClassShowPrice("female",R.drawable.female,"600","ee","female"));
         RecyclerView rv=view.findViewById(R.id.rec7);
-        AdapterShowPrice ad=new AdapterShowPrice(data);
+        AdapterUbdate ad=new AdapterUbdate(data);
         rv.setAdapter(ad);
         rv.hasFixedSize();
         RecyclerView.LayoutManager lm=new LinearLayoutManager(pernet.getContext());

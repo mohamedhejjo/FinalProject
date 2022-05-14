@@ -9,11 +9,11 @@
 
     <item
         android:id="@+id/deletecoltes"
-        android:title="updateColthes"
+        android:title="deleteColthes"
         ></item>
 
     <item
         android:id="@+id/deletedevices"
-        android:title="updaetDevices"
+        android:title="deleteDevices"
         ></item>
 </menu>
