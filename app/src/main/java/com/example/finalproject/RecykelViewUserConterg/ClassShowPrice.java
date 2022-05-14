@@ -6,11 +6,35 @@ public class ClassShowPrice implements Serializable {
     private String name;
     private int image;
     private String price;
+    private String pro;
+private String femal;
 
-    public ClassShowPrice(String name, int image, String price) {
+    public String getFemal() {
+        return femal;
+    }
+
+    public void setFemal(String femal) {
+        this.femal = femal;
+    }
+
+    public String getPro() {
+        return pro;
+    }
+
+    public void setPro(String pro) {
+        this.pro = pro;
+    }
+    public ClassShowPrice(String name, int image, String price,String pro) {
+        this.name = name;
+        this.image = image;
+        this.pro = pro;
+        this.price = price;}
+    public ClassShowPrice(String name, int image, String price,String pro,String femal) {
         this.name = name;
         this.image = image;
         this.price = price;
+        this.pro = pro;
+        this.femal=femal;
     }
 
     public String getName() {

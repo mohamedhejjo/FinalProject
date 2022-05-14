@@ -23,11 +23,11 @@ public class adminCategories extends AppCompatActivity {
             startActivity(intent);
         });
         delete.setOnClickListener(v -> {
-            Intent intent=new Intent(getApplicationContext(), com.example.finalproject.admin.Categories.update.class);
+            Intent intent=new Intent(getApplicationContext(), com.example.finalproject.admin.Categories.delete.class);
             startActivity(intent);
         });
         update.setOnClickListener(v -> {
-            Intent intent=new Intent(getApplicationContext(), com.example.finalproject.admin.Categories.delete.class);
+            Intent intent=new Intent(getApplicationContext(), com.example.finalproject.admin.Categories.update.class);
             startActivity(intent);
         });
 

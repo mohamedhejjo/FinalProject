@@ -1,6 +1,7 @@
 package com.example.finalproject.RecykelViewUserConterg;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.finalproject.R;
+import com.example.finalproject.admin.Clothesa.Updateprofinalcolthes;
+import com.example.finalproject.admin.Clothesa.Updateprofinaldevice;
+import com.example.finalproject.admin.Clothesa.deletefinal;
 
 import java.util.ArrayList;
 import java.util.zip.Inflater;
@@ -35,12 +39,29 @@ public class AdapterShowPrice extends RecyclerView.Adapter<HolderShowPrice> {
         holder.name.setText(csp.getName());
 holder.image.setImageResource(csp.getImage());
 holder.price.setText(csp.getPrice());
-    holder.view.setOnClickListener(new View.OnClickListener() {
+        holder.pro.setText(csp.getPro());
+        holder.female.setText(csp.getFemal());
+
+        holder.view.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+            if (csp.getFemal().equals("female")||csp.getFemal().equals("male")){
+                Intent intent=new Intent(context, Updateprofinalcolthes.class);
+                intent.putExtra("ClassShowPrice",csp);
+                context.startActivity(intent);
+            } }
+        });
+            holder.item.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(csp.getPro().equals("ee")||csp.getPro().equals("eeo")||csp.getPro().equals("eei")||csp.getPro().equals("eey")){
+                        Intent intent=new Intent(context, Updateprofinaldevice.class);
+                        intent.putExtra("ClassShowPrice",csp);
+                        context.startActivity(intent);
+                    }
+                }
+            });
 
-        }
-    });
     }
 
     @Override

@@ -4,14 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".admin.Categories.delete">
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:gravity="center"
-        android:text="If you want to benefit from the deletion process, you must choose from the three points above. Thank you"
-        android:textSize="24sp"
-        android:background="@drawable/text"
+    tools:context=".admin.Clothesa.Updatedevice">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec6"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
