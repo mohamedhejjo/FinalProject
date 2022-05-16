@@ -22,7 +22,7 @@ public class devices extends AppCompatActivity {
         data.add(new ClassCotr("laptop",R.drawable.labtab));
         data.add(new ClassCotr("mouse",R.drawable.mos));
         data.add(new ClassCotr("keyboard",R.drawable.lwha));
-        data.add(new ClassCotr("Play Station",R.drawable.boks));
+        data.add(new ClassCotr("playstation",R.drawable.boks));
         RecyclerView rv=findViewById(R.id.rec5);
         AdapterCotr ad=new AdapterCotr(data);
         rv.setAdapter(ad);

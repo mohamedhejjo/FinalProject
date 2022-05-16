@@ -10,7 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.finalproject.R;
-import com.example.finalproject.user.Categories.book;
+import com.example.finalproject.admin.Clothesa.Updateprofinalcolthes;
+import com.example.finalproject.user.Categories.activityuserfinal;
 import com.example.finalproject.user.Categories.clothes;
 import com.example.finalproject.user.Categories.devices;
 import com.example.finalproject.user.Clothes.userfemale;
@@ -39,23 +40,78 @@ public class AdapterCotr extends RecyclerView.Adapter<HolderCotr> {
         ClassCotr c=data.get(position);
         holder.imagebutton.setImageResource(c.getImageview());
         holder.textView.setText(c.getTextview());
+        String name= (String) holder.textView.getText();
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
              if(holder.textView.getText().equals("clothes")) {
                 Intent intent=new Intent(context, clothes.class);
-                context.startActivity(intent);           }
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
             else if(holder.textView.getText().equals("devices")) {
                 Intent intent=new Intent(context, devices.class);
-                context.startActivity(intent);           }
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
             else if(holder.textView.getText().equals("male")) {
                 Intent intent=new Intent(context, usermale.class);
-                context.startActivity(intent);           }
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
             else if(holder.textView.getText().equals("female")) {
                 Intent intent=new Intent(context, userfemale.class);
-                context.startActivity(intent);           }
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("jacket")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("shoe")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("jeans")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("hat")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("fjacket")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("fshoe")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("fdress")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("fhat")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("laptop")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("mouse")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("keyboard")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
+             else if(holder.textView.getText().equals("playstation")) {
+                 Intent intent=new Intent(context, activityuserfinal.class);
+                 intent.putExtra("finaluser",name);
+                 context.startActivity(intent);           }
             }
+
         });
+
     }
 
     @Override

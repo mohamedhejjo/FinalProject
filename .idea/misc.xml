@@ -9,8 +9,10 @@
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_deletecolthes.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_deletedevice.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_text.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_update_colthesfemale.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_updatecolthes.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activityuserfinal.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/add.xml" value="0.15" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/addcoltes.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/adddevices.xml" value="0.20416666666666666" />
@@ -25,6 +27,18 @@
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/devices.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/devicesadmin.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/female.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment1.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment10.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment11.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment12.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment3.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment4.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment5.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment6.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment7.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment8.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment9.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment_fragmentdeletecolthesmale.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment_fragmentdeletedevice.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment_update_colthesfemale.xml" value="0.20416666666666666" />
@@ -45,6 +59,7 @@
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/itemde.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/itemshowprice.xml" value="0.1" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/male.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/price.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/splash.xml" value="0.12771739130434784" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/update.xml" value="0.18" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/update_colthesmale.xml" value="0.20416666666666666" />

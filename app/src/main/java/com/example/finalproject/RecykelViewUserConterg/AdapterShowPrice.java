@@ -45,10 +45,11 @@ holder.price.setText(csp.getPrice());
             holder.item.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(csp.getPro().equals("ee")||csp.getPro().equals("eeo")||csp.getPro().equals("eei")||csp.getPro().equals("eey")){
+                    if(csp.getPro().equals("laptop")||csp.getPro().equals("mouse")||csp.getPro().equals("keyboard")||csp.getPro().equals("playstation")){
                         Intent intent=new Intent(context, Updateprofinaldevice.class);
                         intent.putExtra("ClassShowPrice",csp);
                         context.startActivity(intent);
+
                     }
                 }
             });

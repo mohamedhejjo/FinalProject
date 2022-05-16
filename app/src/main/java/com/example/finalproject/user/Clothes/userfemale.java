@@ -19,10 +19,10 @@ public class userfemale extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.userfemale);
         ArrayList<ClassCotr> data=new ArrayList<>();
-        data.add(new ClassCotr("jacket",R.drawable.jacuetfemale));
-        data.add(new ClassCotr("shoe",R.drawable.shosefemale));
-        data.add(new ClassCotr("dress",R.drawable.fastun));
-        data.add(new ClassCotr("hat",R.drawable.hatfemale));
+        data.add(new ClassCotr("fjacket",R.drawable.jacuetfemale));
+        data.add(new ClassCotr("fshoe",R.drawable.shosefemale));
+        data.add(new ClassCotr("fdress",R.drawable.fastun));
+        data.add(new ClassCotr("fhat",R.drawable.hatfemale));
 
         RecyclerView rv=findViewById(R.id.rec3);
         AdapterCotr ad=new AdapterCotr(data);
