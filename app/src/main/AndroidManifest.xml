@@ -36,12 +36,7 @@
         <activity
             android:name=".admin.Clothesa.Updatedevice"
             android:exported="false" />
-        <activity
-            android:name=".admin.Categories.Updateadminpro.UpdateColthesfemale"
-            android:exported="false" />
-        <activity
-            android:name=".admin.Categories.Updateadminpro.UpdateColthesmale"
-            android:exported="false" />
+
         <activity
             android:name=".admin.Clothesa.addcolthes"
             android:exported="false"
