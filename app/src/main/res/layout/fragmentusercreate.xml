@@ -31,11 +31,12 @@
         app:startIconDrawable="@drawable/name"
         app:endIconMode="clear_text"
         >
+
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed1user"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:maxLength="20"
-            />
+            android:maxLength="20" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -56,11 +57,12 @@
         app:startIconDrawable="@drawable/number"
         app:endIconMode="clear_text"
         >
+
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed2user"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:maxLength="20"
-            />
+            android:maxLength="20" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -82,12 +84,13 @@
         app:startIconDrawable="@drawable/pass"
         app:endIconMode="password_toggle"
         >
+
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed3user"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:maxLength="20"
             android:inputType="numberPassword"
-            />
+            android:maxLength="20" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
