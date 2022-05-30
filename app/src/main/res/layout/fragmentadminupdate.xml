@@ -11,7 +11,7 @@
     android:layout_height="100dp"
     android:layout_gravity="center"
     android:layout_marginTop="20dp"
-    android:src="@drawable/login"
+    android:src="@drawable/admin"
     />
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/fieldnameadminold"
@@ -25,11 +25,11 @@
         app:endIconMode="clear_text"
         app:helperText="Required*"
         app:helperTextTextColor="@color/red"
-        app:startIconDrawable="@drawable/name"
+        app:startIconDrawable="@drawable/number"
         android:layout_width="match_parent"
         android:layout_height="90dp"
       android:layout_margin="5dp"
-        android:hint="Enternameold">
+        android:hint="@string/numberold">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_margin="5dp"
-        android:hint="Enternamenew">
+        android:hint="@string/numbernew">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -70,14 +70,14 @@
         app:boxCornerRadiusTopStart="20dp"
         app:counterEnabled="true"
         app:counterMaxLength="20"
-        app:endIconMode="clear_text"
+        app:endIconMode="password_toggle"
         app:helperText="Required*"
         app:helperTextTextColor="@color/red"
-        app:startIconDrawable="@drawable/number"
+        app:startIconDrawable="@drawable/pass"
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_margin="5dp"
-        android:hint="Enterpassold">
+        android:hint="@string/passwordold">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -101,10 +101,10 @@
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="30dp"
-        android:hint="Enterpassnew">
+        android:hint="@string/passwordnew">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -120,7 +120,7 @@
         android:layout_margin="5dp"
         android:layout_marginBottom="324dp"
         android:background="@drawable/fragmentuttoncaolor"
-        android:text="Update"
+        android:text="@string/Update"
         android:textSize="24sp" />
 
 

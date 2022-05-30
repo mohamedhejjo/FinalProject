@@ -9,13 +9,27 @@
     <string name="app_name6">كتب</string>
     <string name="app_name7">ذكر</string>
     <string name="app_name8">انثى</string>
-    <string name="Login_administrator"> تسجيل الدخول كمسؤول</string>
-    <string name="Login_user"> تسجيل الدخول مستخدم</string>
+    <string name="Login_administrator"> مشرف</string>
+    <string name="Login_user">  مستخدم</string>
     <string name="Login"> تسجيل الدخول </string>
     <string name="Create">انشاء</string>
     <string name="welcom_masseg2">مرحبا بكم في متجر غزة ... مسؤول</string>
     <string name="welcom_masseg3">مرحبًا بالمشرف</string>
-    <string name="welcom_masseg">أهلا بك في برنامج التسويق الإلكتروني. إذا كنت ترغب في الانضمام إلى البرنامج ، يرجى تحديد طريقة الدخول</string>
+    <string name="welcom_masseguser">مرحب بدك ايها المستخدم نتشرف في خدمتك</string>
+    <string name="welcom_massegadmin">مرحب بدك ايها المشرف نتشرف في خدمتك</string>
 
     <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
+    <string name="email">ادخل الايميل</string>
+    <string name="name">ادخل الاسم</string>
+    <string name="password">ادخل كلمة السر</string>
+    <string name="namenew">الاسم الجديد</string>
+    <string name="nameold">الاسم القديم</string>
+    <string name="passwordnew">كلمة السر الجديد</string>
+    <string name="passwordold">كلمة السر القديم</string>
+    <string name="numberold">رقم قديم</string>
+    <string name="numbernew">رقم جديد</string>
+    <string name="number">ادخل الرقم</string>
+
+    <string name="Update"> تعديل</string>
+
 </resources>

@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".fragment.FragmentuserCreate">
+    tools:context=".fragment.FragmentadminCreat">
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:src="@drawable/login"
+        android:src="@drawable/admin"
         />
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/fieldname"
+        android:id="@+id/fieldnameadmin"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="@string/name"
+        android:hint="@string/number"
         app:helperText="Required*"
         app:helperTextTextColor="@color/red"
         app:counterEnabled="true"
@@ -28,19 +29,19 @@
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
         android:layout_margin="5dp"
-        app:startIconDrawable="@drawable/name"
+        app:startIconDrawable="@drawable/number"
         app:endIconMode="clear_text"
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ed1user"
+            android:id="@+id/ed1useradmin"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:maxLength="40" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email"
+        android:id="@+id/emailadmin"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -59,15 +60,15 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ed2user"
+            android:id="@+id/ed2useradmin"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:maxLength="40" />
+            android:maxLength="20" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/fieldpass"
+        android:id="@+id/fieldpassadmin"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="5dp"
@@ -86,7 +87,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ed3user"
+            android:id="@+id/ed3useradmin"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:inputType="numberPassword"
@@ -94,7 +95,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/usercreate"
+        android:id="@+id/admincreate"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginBottom="324dp"
@@ -103,6 +104,5 @@
         android:text="@string/Create"
         android:textSize="24sp"
         />
-
 
 </LinearLayout>

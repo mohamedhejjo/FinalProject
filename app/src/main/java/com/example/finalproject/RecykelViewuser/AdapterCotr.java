@@ -38,7 +38,7 @@ public class AdapterCotr extends RecyclerView.Adapter<HolderCotr> {
     @Override
     public void onBindViewHolder(@NonNull HolderCotr holder, int position) {
         ClassCotr c=data.get(position);
-        holder.imagebutton.setImageResource(c.getImageview());
+        holder.imageView.setImageResource(c.getImageview());
         holder.textView.setText(c.getTextview());
         String name= (String) holder.textView.getText();
         holder.itemView.setOnClickListener(new View.OnClickListener() {

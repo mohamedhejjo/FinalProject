@@ -8,9 +8,6 @@ import android.os.Bundle;
 import com.example.finalproject.R;
 import com.example.finalproject.admin.ViewPageradmin.Mytabadmin;
 import com.example.finalproject.admin.ViewPageradmin.adapterpaferadmin;
-import com.example.finalproject.fragment.FragmentadminUpdate;
-import com.example.finalproject.fragment.Fragmentadminlogin;
-import com.example.finalproject.fragment.FragmentadminHome;
 import com.example.finalproject.fragment.FragmentuserCreate;
 import com.example.finalproject.fragment.FragmentuserUpdate;
 import com.example.finalproject.fragment.Fragmentuserlogin;
@@ -24,29 +21,6 @@ public class user extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        Button btnlogin=findViewById(R.id.userloginhome);
-//        Button btnCreate=findViewById(R.id.usercreatehome);
-//
-//        btnlogin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Fragmentuserlogin ful=new Fragmentuserlogin();
-//                FragmentManager FM=getSupportFragmentManager();
-//                FragmentTransaction FT=FM.beginTransaction();
-//                FT.replace(R.id.fragmentuser,ful);
-//                FT.commit();
-//            }
-//        });
-//        btnCreate.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                FragmentuserCreate fuc=new FragmentuserCreate();
-//                FragmentManager FM=getSupportFragmentManager();
-//                FragmentTransaction FT=FM.beginTransaction();
-//                FT.replace(R.id.fragmentuser,fuc);
-//                FT.commit();
-//            }
-//        });
         tabLayout=findViewById(R.id.tabLayoutuser);
         viewPager=findViewById(R.id.viewpageruser);
         tabLayout.setupWithViewPager(viewPager);

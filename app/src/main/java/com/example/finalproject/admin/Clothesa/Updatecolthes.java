@@ -10,9 +10,6 @@ import com.example.finalproject.admin.ViewPageradmin.Mytabadmin;
 import com.example.finalproject.admin.ViewPageradmin.adapterpaferadmin;
 import com.example.finalproject.fragment.FragmentUpdatecolthesfemale;
 import com.example.finalproject.fragment.FragmentUpdatecolthesmale;
-import com.example.finalproject.fragment.FragmentadminHome;
-import com.example.finalproject.fragment.FragmentadminUpdate;
-import com.example.finalproject.fragment.Fragmentadminlogin;
 import com.google.android.material.tabs.TabLayout;
 
 public class Updatecolthes extends AppCompatActivity {

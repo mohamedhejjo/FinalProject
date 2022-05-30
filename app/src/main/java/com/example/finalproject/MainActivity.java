@@ -2,6 +2,7 @@ package com.example.finalproject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -14,32 +15,64 @@ import android.widget.Button;
 
 import com.example.finalproject.admin.Clothesa.addcolthes;
 import com.example.finalproject.admin.Clothesa.adddevices;
+import com.example.finalproject.admin.ViewPageradmin.Mytabadmin;
+import com.example.finalproject.admin.ViewPageradmin.adapterpaferadmin;
 import com.example.finalproject.admin.admin;
 import com.example.finalproject.admin.adminCategories;
+import com.example.finalproject.fragment.FragmentuserCreate;
+import com.example.finalproject.fragment.FragmentuserUpdate;
+import com.example.finalproject.fragment.Fragmentuserlogin;
+import com.example.finalproject.fragment.mainadmin;
+import com.example.finalproject.fragment.mainuser;
 import com.example.finalproject.user.user;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-
+    TabLayout tabLayout;
+    ViewPager viewPager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button loginadmin=findViewById(R.id.loginadmin);
-        Button loginuser=findViewById(R.id.loginuser);
-        loginadmin.setOnClickListener(new View.OnClickListener() {
+        tabLayout=findViewById(R.id.tabLayouthome);
+        viewPager=findViewById(R.id.viewpagerhome);
+        tabLayout.setupWithViewPager(viewPager);
+        adapterpaferadmin adapter=new adapterpaferadmin(getSupportFragmentManager());
+        adapter.addtaps(new Mytabadmin( new mainadmin(),"admin"));
+        adapter.addtaps(new Mytabadmin(new mainuser(),"user"));
+        viewPager.setAdapter(adapter);
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), admin.class);
-                startActivity(intent);
+            public void onTabSelected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
             }
         });
-        loginuser.setOnClickListener(new View.OnClickListener() {
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), user.class);
-                startActivity(intent);
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
             }
         });
     }
@@ -70,5 +103,7 @@ public class MainActivity extends AppCompatActivity {
         getResources().updateConfiguration(conf,dm);
         Intent intent=new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
+        finish();
+
     }
 }
