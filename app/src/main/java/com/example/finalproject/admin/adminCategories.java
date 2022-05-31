@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageButton;
 import com.example.finalproject.R;
 
@@ -14,9 +15,9 @@ public class adminCategories extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admincategories);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ImageButton add=findViewById(R.id.imageadmin1);
-        ImageButton delete=findViewById(R.id.imageadmin2);
-        ImageButton update=findViewById(R.id.imageadmin3);
+        Button add=findViewById(R.id.add);
+        Button delete=findViewById(R.id.delete);
+        Button update=findViewById(R.id.update);
 
         add.setOnClickListener(v -> {
             Intent intent=new Intent(getApplicationContext(), com.example.finalproject.admin.Categories.add.class);

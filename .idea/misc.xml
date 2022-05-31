@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/drawable/btnadmin.xml" value="0.2203125" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/drawable/delete.xml" value="0.2203125" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/drawable/for_logo.xml" value="0.2203125" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/drawable/fragmentuttoncaolor.xml" value="0.2203125" />
@@ -10,6 +11,7 @@
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_deletecolthes.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_deletedevice.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_main2.xml" value="0.18297101449275363" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_text.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_update_colthesfemale.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_updatecolthes.xml" value="0.19010416666666666" />

@@ -1,108 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+android:gravity="center"
     tools:context=".admin.adminCategories">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        app:cardCornerRadius="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/purple_200"
-            android:orientation="vertical">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/add" />
 
-            <ImageButton
-                android:id="@+id/imageadmin1"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/add" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+            android:background="@drawable/btnadmin"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:gravity="center"
-                android:text="add"
-                android:textSize="30sp" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+            android:textColor="@color/black"
+            android:gravity="center"
+        android:text="Add"
+            android:layout_margin="10dp"
+        android:textSize="24sp"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/delete" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        app:cardCornerRadius="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3"
-        app:layout_constraintVertical_bias="0.060000002">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Delete"
+            android:layout_margin="10dp"
+            android:background="@drawable/btnadmin"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/purple_200"
-            android:orientation="vertical">
+            android:textColor="@color/black"
+            android:textSize="24sp"
+        />
 
-            <ImageButton
-                android:id="@+id/imageadmin2"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/delete1" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/update" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:gravity="center"
-                android:text="delete"
-                android:textSize="30sp" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="Update"
+            android:background="@drawable/btnadmin"
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        app:cardCornerRadius="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4"
-        app:layout_constraintVertical_bias="0.24000001">
+            android:textColor="@color/black"
+        android:textSize="24sp"
+        />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/purple_200"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/imageadmin3"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/update" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:gravity="center"
-                android:text="Update"
-                android:textSize="30sp" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

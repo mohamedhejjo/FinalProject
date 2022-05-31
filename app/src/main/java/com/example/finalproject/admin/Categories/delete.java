@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
 import com.example.finalproject.R;
 import com.example.finalproject.admin.Clothesa.Updatecolthes;
@@ -22,8 +24,12 @@ public class delete extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.delete);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+            }
+        }, 10000);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
