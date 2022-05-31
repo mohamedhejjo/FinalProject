@@ -24,6 +24,8 @@ public class Updateprofinaldevice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.updateprofinaldevice);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        addimage=findViewById(R.id.updateimage);
+
     }
     public void Mohamed(View view) {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);

@@ -17,13 +17,14 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 public class adddevices extends AppCompatActivity {
-    private ImageView addimage;
+    private ImageView adddevices;
     static byte[] imageContentdevices;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.adddevices);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        adddevices=findViewById(R.id.addimage);
     }
     public void Mohamed(View view) {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
@@ -39,7 +40,7 @@ public class adddevices extends AppCompatActivity {
             try {
                 InputStream inputStream=getContentResolver().openInputStream(imageuri);
                 Bitmap descorStream = BitmapFactory.decodeStream(inputStream);
-                addimage.setImageBitmap(descorStream);
+                adddevices.setImageBitmap(descorStream);
                 imageContentdevices=getBytes(descorStream);
             }catch (Exception ex){
                 ex.printStackTrace();

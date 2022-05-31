@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:cardCornerRadius="30dp"
-        android:layout_margin="35dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
->
-        <ImageView
+android:layout_marginTop="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="5dp">
+
+      <ImageView
             android:id="@+id/imageuser"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:gravity="center"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_background"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="5dp"
+        >
+
     <TextView
         android:id="@+id/nameuser"
         android:layout_width="match_parent"
@@ -34,6 +39,13 @@
         android:gravity="center"
         android:text="......"
         android:background="@color/purple_200"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="5dp"
+        >
     <TextView
         android:id="@+id/priceuser"
         android:layout_width="match_parent"
@@ -43,30 +55,35 @@
         android:gravity="center"
         android:text="....."
         android:background="@color/purple_200"/>
-    <LinearLayout
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="5dp"
+        >
         <TextView
         android:id="@+id/prouser"
-        android:layout_width="170dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textSize="30sp"
             android:textColor="@color/white"
         android:gravity="center"
         android:text="......"
         android:background="@color/purple_200"/>
+    </androidx.cardview.widget.CardView>
+
     <TextView
         android:id="@+id/femal"
-        android:layout_width="172dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textSize="30sp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:gravity="center"
         android:text="......"
-        android:background="@color/purple_200"/>
-    </LinearLayout>
+        android:background="@color/white"/>
+
+
 
 </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>

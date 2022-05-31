@@ -33,6 +33,7 @@ public class Updateprofinalcolthes extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         spinner1 = findViewById(R.id.spinner11);
         spinner2 = findViewById(R.id.spinner22);
+        addimage=findViewById(R.id.updateimage);
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> prent, View view, int i, long l) {

@@ -30,6 +30,7 @@ public class addcolthes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.addcoltes);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        addimage=findViewById(R.id.addimage);
         spinner1 = findViewById(R.id.spinner1);
         spinner2 = findViewById(R.id.spinner2);
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

@@ -8,7 +8,7 @@
     tools:context=".admin.Clothesa.Updateprofinalcolthes">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/addimage"
+        android:id="@+id/updateimage"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_gravity="center"
