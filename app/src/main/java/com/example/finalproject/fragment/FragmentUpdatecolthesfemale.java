@@ -25,10 +25,16 @@ public class FragmentUpdatecolthesfemale extends Fragment {
                              Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_updatecolthesfemale, pernet, false);
         ArrayList<ClassShowPrice> data=new ArrayList<>();
-        data.add(new ClassShowPrice("male",R.drawable.male,"300","ee","female"));
-        data.add(new ClassShowPrice("female",R.drawable.female,"400","ee","female"));
-        data.add(new ClassShowPrice("male",R.drawable.male,"500","ee","female"));
-        data.add(new ClassShowPrice("female",R.drawable.female,"600","ee","female"));
+        String fjacket=getString(R.string.fjacket);
+        String fshoe= getString(R.string.fshoe);
+        String fdress= getString(R.string.fdress);
+        String fhat= getString(R.string.fhat);
+
+        String female= getString(R.string.female);
+        data.add(new ClassShowPrice("male",R.drawable.male,"300",fjacket,female));
+        data.add(new ClassShowPrice("female",R.drawable.female,"400",fshoe,female));
+        data.add(new ClassShowPrice("male",R.drawable.male,"500",fdress,female));
+        data.add(new ClassShowPrice("female",R.drawable.female,"600",fhat,female));
         RecyclerView rv=view.findViewById(R.id.rec7);
         AdapterUbdate ad=new AdapterUbdate(data);
         rv.setAdapter(ad);

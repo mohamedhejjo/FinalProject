@@ -9,7 +9,11 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.example.finalproject.R;
 
@@ -18,6 +22,10 @@ import java.io.InputStream;
 
 public class Updateprofinaldevice extends AppCompatActivity {
     private ImageView addimage;
+    TextView name,price;
+    Button update;
+     String selected;
+    Spinner spinner;
     static byte[] imageContentdevicesUpdate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +33,36 @@ public class Updateprofinaldevice extends AppCompatActivity {
         setContentView(R.layout.updateprofinaldevice);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         addimage=findViewById(R.id.updateimage);
+//        name=findViewById(R.id.nameUpdatedevice);
+//        price=findViewById(R.id.priceUpdatedivace);
+//        update=findViewById(R.id.Updatecreatedivaec);
+        spinner=findViewById(R.id.spinner4);
+
+        //        update.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                String name1=name.getText().toString();
+//                String price1=price.getText().toString();
+//                if (name1.equals("")){
+//                    Toast.makeText(getApplicationContext(), "Enter name", Toast.LENGTH_SHORT).show();  }
+//            else if(price1.equals("")){
+//                    Toast.makeText(getApplicationContext(), "Enter Price", Toast.LENGTH_SHORT).show();  }
+//            else{}
+//            }
+//
+//        });
+//        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+//                selected= adapterView.getItemAtPosition(i).toString();
+//
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> adapterView) {
+//
+//            }
+//        });
 
     }
     public void Mohamed(View view) {

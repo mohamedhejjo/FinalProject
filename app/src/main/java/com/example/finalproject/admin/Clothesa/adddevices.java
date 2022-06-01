@@ -9,7 +9,11 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.example.finalproject.R;
 
@@ -19,12 +23,47 @@ import java.io.InputStream;
 public class adddevices extends AppCompatActivity {
     private ImageView adddevices;
     static byte[] imageContentdevices;
+    TextView name,price;
+    Spinner spinner;
+     String selected;
+    Button add;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.adddevices);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         adddevices=findViewById(R.id.addimage);
+//        name=findViewById(R.id.nameadddevice);
+//        price=findViewById(R.id.priceadddivace);
+//        add=findViewById(R.id.addcreatedivaec);
+        spinner = findViewById(R.id.spinner3);
+
+//        add.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                String name1=name.getText().toString();
+//                String price1=price.getText().toString();
+//                if (name1.equals("")){
+//                    Toast.makeText(getApplicationContext(), "Enter name", Toast.LENGTH_SHORT).show();  }
+//            else if(price1.equals("")){
+//                    Toast.makeText(getApplicationContext(), "Enter Price", Toast.LENGTH_SHORT).show();  }
+//            else{}
+//            }
+//
+//        });
+//        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+//                selected= adapterView.getItemAtPosition(i).toString();
+//
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> adapterView) {
+//
+//            }
+//        });
+
     }
     public void Mohamed(View view) {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);

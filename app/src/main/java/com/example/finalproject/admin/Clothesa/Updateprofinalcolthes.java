@@ -11,8 +11,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.example.finalproject.R;
 
@@ -24,6 +26,10 @@ public class Updateprofinalcolthes extends AppCompatActivity {
 
     Spinner spinner1;
     Spinner spinner2;
+    TextView name,price;
+    Button update;
+       String selected1;
+       String selected2;
     private ImageView addimage;
     static byte[] imageContent;
     @Override
@@ -34,27 +40,53 @@ public class Updateprofinalcolthes extends AppCompatActivity {
         spinner1 = findViewById(R.id.spinner11);
         spinner2 = findViewById(R.id.spinner22);
         addimage=findViewById(R.id.updateimage);
+//        name=findViewById(R.id.nameupdate);
+//        price=findViewById(R.id.priceupdate);
+//        update=findViewById(R.id.Updatecreate);
+        //        update.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                String name1=name.getText().toString();
+//                String price1=price.getText().toString();
+//                if (name1.equals("")){
+//                    Toast.makeText(getApplicationContext(), "Enter name", Toast.LENGTH_SHORT).show();  }
+//            else if(price1.equals("")){
+//                    Toast.makeText(getApplicationContext(), "Enter Price", Toast.LENGTH_SHORT).show();  }
+//            else{}
+//            }
+//
+//        });
+
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> prent, View view, int i, long l) {
-                String selected = prent.getItemAtPosition(i).toString();
-                if (selected.equals("male")) {
-                    ArrayList<String> male = new ArrayList<>();
-                    male.add("mjacket");
-                    male.add("mshoe");
-                    male.add("mjeans");
-                    male.add("mhat");
-                    ArrayAdapter<String> adaptermale = new ArrayAdapter<String>(prent.getContext(), android.R.layout.simple_spinner_dropdown_item, male);
+               selected1 = prent.getItemAtPosition(i).toString();
+                String male=getString(R.string.male);
+                String female=getString(R.string.female);
+                if (selected1.equals(male)) {
+                    ArrayList<String> male1 = new ArrayList<>();
+                    String jacket=getString(R.string.jacket);
+                    String shoe= getString(R.string.shoe);
+                    String jeans= getString(R.string.jeans);
+                    String hat= getString(R.string.hat);
+                    male1.add(jacket);
+                    male1.add(shoe);
+                    male1.add(jeans);
+                    male1.add(hat);
+                    ArrayAdapter<String> adaptermale = new ArrayAdapter<String>(prent.getContext(), android.R.layout.simple_spinner_dropdown_item, male1);
                     spinner2.setAdapter(adaptermale);
-                } else if (selected.equals("female")) {
-                    ArrayList<String> female = new ArrayList<>();
-                    female.add("fjacket");
-                    female.add("fshoe");
-                    female.add("fdress");
-                    female.add("fhat");
-                    ArrayAdapter<String> adapterfemale = new ArrayAdapter<String>(prent.getContext(), android.R.layout.simple_spinner_dropdown_item, female);
+                } else if (selected1.equals(female)) {
+                    ArrayList<String> female1 = new ArrayList<>();
+                    String fjacket=getString(R.string.fjacket);
+                    String fshoe= getString(R.string.fshoe);
+                    String fdress= getString(R.string.fdress);
+                    String fhat= getString(R.string.fhat);
+                    female1.add(fjacket);
+                    female1.add(fshoe);
+                    female1.add(fdress);
+                    female1.add(fhat);
+                    ArrayAdapter<String> adapterfemale = new ArrayAdapter<String>(prent.getContext(), android.R.layout.simple_spinner_dropdown_item, female1);
                     spinner2.setAdapter(adapterfemale);
-
 
                 }
             }
@@ -64,6 +96,19 @@ public class Updateprofinalcolthes extends AppCompatActivity {
 
             }
         });
+//        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+//                selected2 = adapterView.getItemAtPosition(i).toString();
+//
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> adapterView) {
+//
+//            }
+//        });
+
     }
     public void Mohamed(View view) {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);

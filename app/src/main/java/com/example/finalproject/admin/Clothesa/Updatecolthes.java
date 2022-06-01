@@ -18,6 +18,7 @@ public class Updatecolthes extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_updatecolthes);
         tabLayout=findViewById(R.id.tabLayoutadminUpdate);
         viewPager=findViewById(R.id.viewpageradminUpdate);

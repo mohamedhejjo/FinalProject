@@ -26,10 +26,16 @@ public class Fragmentdeletecolthesfemale extends Fragment {
                              Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_fragmentdeletecolthesfemale, pernet, false);
         ArrayList<ClassShowPrice> data=new ArrayList<>();
-        data.add(new ClassShowPrice("female!",R.drawable.female,"30","jacet","female"));
-        data.add(new ClassShowPrice("female!",R.drawable.female,"40","eee","female"));
-        data.add(new ClassShowPrice("female!",R.drawable.male,"60","fff","female"));
-        data.add(new ClassShowPrice("female!",R.drawable.female,"70","sss","female"));
+        String fjacket=getString(R.string.fjacket);
+        String fshoe= getString(R.string.fshoe);
+        String fdress= getString(R.string.fdress);
+        String fhat= getString(R.string.fhat);
+
+        String female= getString(R.string.female);
+        data.add(new ClassShowPrice("female!",R.drawable.female,"30",fjacket,female));
+        data.add(new ClassShowPrice("female!",R.drawable.female,"40",fshoe,female));
+        data.add(new ClassShowPrice("female!",R.drawable.male,"60",fdress,female));
+        data.add(new ClassShowPrice("female!",R.drawable.female,"70",fhat,female));
         RecyclerView rv=view.findViewById(R.id.rec10);
         Adapterdelete ad=new Adapterdelete(data);
         rv.setAdapter(ad);

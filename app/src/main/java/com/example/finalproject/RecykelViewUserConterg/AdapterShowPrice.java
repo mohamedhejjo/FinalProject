@@ -37,15 +37,19 @@ public class AdapterShowPrice extends RecyclerView.Adapter<HolderShowPrice> {
     public void onBindViewHolder(@NonNull HolderShowPrice holder, int position) {
         ClassShowPrice csp=data.get(position);
         holder.name.setText(csp.getName());
-holder.image.setImageResource(csp.getImage());
-holder.price.setText(csp.getPrice());
+        holder.image.setImageResource(csp.getImage());
+        holder.price.setText(csp.getPrice());
         holder.pro.setText(csp.getPro());
         holder.female.setText(csp.getFemal());
 
             holder.item.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(csp.getPro().equals("laptop")||csp.getPro().equals("mouse")||csp.getPro().equals("keyboard")||csp.getPro().equals("playstation")){
+                    String laptop= context.getString(R.string.laptop);
+                    String mouse= context.getString(R.string.mouse);
+                    String keyboard= context.getString(R.string.keyboard);
+                    String playstation= context.getString(R.string.playstation);
+                    if(csp.getPro().equals(laptop)||csp.getPro().equals(mouse)||csp.getPro().equals(keyboard)||csp.getPro().equals(playstation)){
                         Intent intent=new Intent(context, Updateprofinaldevice.class);
                         intent.putExtra("ClassShowPrice",csp);
                         context.startActivity(intent);

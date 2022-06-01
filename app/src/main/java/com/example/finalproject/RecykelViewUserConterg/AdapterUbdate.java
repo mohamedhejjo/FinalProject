@@ -42,7 +42,9 @@ public class AdapterUbdate extends RecyclerView.Adapter<HolderShowPrice> {
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (csp.getFemal().equals("female")||csp.getFemal().equals("male")){
+                String male= context.getString(R.string.male);
+                String female= context.getString(R.string.female);
+                if (csp.getFemal().equals(female)||csp.getFemal().equals(male)){
                     Intent intent=new Intent(context, Updateprofinalcolthes.class);
                     intent.putExtra("ClassShowPrice",csp);
                     context.startActivity(intent);

@@ -36,8 +36,10 @@ public class userCategories extends AppCompatActivity {
             startActivity(intent);
         });*/
         ArrayList<ClassCotr> data=new ArrayList<>();
-        data.add(new ClassCotr("clothes",R.drawable.clothes));
-        data.add(new ClassCotr("devices",R.drawable.computer));
+        String clothes= getString(R.string.app_name4);
+        String devices= getString(R.string.app_name5);
+        data.add(new ClassCotr(clothes,R.drawable.clothes));
+        data.add(new ClassCotr(devices,R.drawable.computer));
 
         RecyclerView rv=findViewById(R.id.rec);
         AdapterCotr ad=new AdapterCotr(data);

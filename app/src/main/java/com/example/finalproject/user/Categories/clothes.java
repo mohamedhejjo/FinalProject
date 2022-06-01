@@ -35,9 +35,11 @@ public class clothes extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
+        String male= getString(R.string.male);
+        String female= getString(R.string.female);
         ArrayList<ClassCotr> data=new ArrayList<>();
-        data.add(new ClassCotr("male",R.drawable.male));
-        data.add(new ClassCotr("female",R.drawable.female));
+        data.add(new ClassCotr(male,R.drawable.male));
+        data.add(new ClassCotr(female,R.drawable.female));
         RecyclerView rv=findViewById(R.id.rec2);
         AdapterCotr ad=new AdapterCotr(data);
         rv.setAdapter(ad);

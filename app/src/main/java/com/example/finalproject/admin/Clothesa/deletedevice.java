@@ -18,6 +18,7 @@ public class deletedevice extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_deletedevice);
         ArrayList<ClassShowPrice> data=new ArrayList<>();
         data.add(new ClassShowPrice("male!",R.drawable.male,"77","ee"));

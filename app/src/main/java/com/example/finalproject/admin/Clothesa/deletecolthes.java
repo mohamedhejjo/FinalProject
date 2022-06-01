@@ -20,6 +20,7 @@ public class deletecolthes extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_deletecolthes);
         tabLayout=findViewById(R.id.tabLayoutadmindelete);
         viewPager=findViewById(R.id.viewpageradmindelete);

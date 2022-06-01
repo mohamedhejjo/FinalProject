@@ -39,5 +39,31 @@
     <string name="numberold">number old</string>
     <string name="numbernew">number new</string>
     <string name="number">Enter number</string>
+    <string name="sex">sex</string>
+    <string name="Producer">Producer</string>
+    <string name="price">Enter price</string>
+    <string name="addcol">add colthes</string>
+    <string name="adddevice">add device</string>
+    <string name="Updatedevice">update device</string>
+    <string name="Updateclothes">update colthes</string>
+    <string name="add">add</string>
+    <string name="delete">delete</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="laptop">laptop</string>
+    <string name="mouse">mouse</string>
+    <string name="keyboard">keyboard</string>
+    <string name="playstation">playstation</string>
+
+    <string name="fjacket">jacket</string>
+    <string name="fshoe">shoe</string>
+    <string name="fdress">dress</string>
+    <string name="fhat">hat</string>
+
+    <string name="jacket">jacket</string>
+    <string name="shoe">shoe</string>
+    <string name="jeans">jeans</string>
+    <string name="hat">hat</string>
+    <string name="price1">price</string>
 
 </resources>

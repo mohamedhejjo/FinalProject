@@ -44,67 +44,83 @@ public class AdapterCotr extends RecyclerView.Adapter<HolderCotr> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             if(holder.textView.getText().equals("clothes")) {
+                String male= context.getString(R.string.male);
+                String female= context.getString(R.string.female);
+                String laptop= context.getString(R.string.laptop);
+                String mouse= context.getString(R.string.mouse);
+                String keyboard= context.getString(R.string.keyboard);
+                String playstation= context.getString(R.string.playstation);
+                String fjacket=context.getString(R.string.fjacket);
+                String fshoe= context.getString(R.string.fshoe);
+                String fdress= context.getString(R.string.fdress);
+                String fhat= context.getString(R.string.fhat);
+                String jacket=context.getString(R.string.fjacket);
+                String shoe= context.getString(R.string.fshoe);
+                String jeans= context.getString(R.string.jeans);
+                String hat= context.getString(R.string.hat);
+                String clothes= context.getString(R.string.app_name4);
+                String devices= context.getString(R.string.app_name5);
+             if(holder.textView.getText().equals(clothes)) {
                 Intent intent=new Intent(context, clothes.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-            else if(holder.textView.getText().equals("devices")) {
+            else if(holder.textView.getText().equals(devices)) {
                 Intent intent=new Intent(context, devices.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-            else if(holder.textView.getText().equals("male")) {
+            else if(holder.textView.getText().equals(male)) {
                 Intent intent=new Intent(context, usermale.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-            else if(holder.textView.getText().equals("female")) {
+            else if(holder.textView.getText().equals(female)) {
                 Intent intent=new Intent(context, userfemale.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("jacket")) {
+             else if(holder.textView.getText().equals(jacket)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("shoe")) {
+             else if(holder.textView.getText().equals(shoe)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("jeans")) {
+             else if(holder.textView.getText().equals(jeans)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("hat")) {
+             else if(holder.textView.getText().equals(hat)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("fjacket")) {
+             else if(holder.textView.getText().equals(fjacket)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("fshoe")) {
+             else if(holder.textView.getText().equals(fshoe)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("fdress")) {
+             else if(holder.textView.getText().equals(fdress)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("fhat")) {
+             else if(holder.textView.getText().equals(fhat)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("laptop")) {
+             else if(holder.textView.getText().equals(laptop)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("mouse")) {
+             else if(holder.textView.getText().equals(mouse)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("keyboard")) {
+             else if(holder.textView.getText().equals(keyboard)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }
-             else if(holder.textView.getText().equals("playstation")) {
+             else if(holder.textView.getText().equals(playstation)) {
                  Intent intent=new Intent(context, activityuserfinal.class);
                  intent.putExtra("finaluser",name);
                  context.startActivity(intent);           }

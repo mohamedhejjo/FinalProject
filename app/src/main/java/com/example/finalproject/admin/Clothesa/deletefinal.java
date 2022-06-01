@@ -21,7 +21,6 @@ public class deletefinal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.deletefinal);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         Intent intent=getIntent();
         ClassShowPrice csp=(ClassShowPrice)intent.getSerializableExtra("ClassShowPrice");
         ImageView imag=findViewById(R.id.imageuserdelete);

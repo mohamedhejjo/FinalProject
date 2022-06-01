@@ -17,12 +17,17 @@ public class devices extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.devices);
         ArrayList<ClassCotr> data=new ArrayList<>();
-        data.add(new ClassCotr("laptop",R.drawable.labtab));
-        data.add(new ClassCotr("mouse",R.drawable.mos));
-        data.add(new ClassCotr("keyboard",R.drawable.lwha));
-        data.add(new ClassCotr("playstation",R.drawable.boks));
+        String laptop= getString(R.string.laptop);
+        String mouse= getString(R.string.mouse);
+        String keyboard= getString(R.string.keyboard);
+        String playstation= getString(R.string.playstation);
+        data.add(new ClassCotr(laptop,R.drawable.labtab));
+        data.add(new ClassCotr(mouse,R.drawable.mos));
+        data.add(new ClassCotr(keyboard,R.drawable.lwha));
+        data.add(new ClassCotr(playstation,R.drawable.boks));
         RecyclerView rv=findViewById(R.id.rec5);
         AdapterCotr ad=new AdapterCotr(data);
         rv.setAdapter(ad);

@@ -16,6 +16,7 @@ public class Price extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.price);
         TextView name=findViewById(R.id.nameprice);
         TextView price=findViewById(R.id.priceprice);

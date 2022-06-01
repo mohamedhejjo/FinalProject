@@ -17,6 +17,7 @@ public class Updatedevice extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.updatedevice);
         ArrayList<ClassShowPrice> data=new ArrayList<>();
         data.add(new ClassShowPrice("male",R.drawable.male,"100","laptop"));

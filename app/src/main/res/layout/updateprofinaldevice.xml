@@ -32,7 +32,7 @@
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Producer"
+            android:text="@string/Producer"
             android:textSize="18sp" />
 
         <Spinner
@@ -51,7 +51,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="5dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Enter Name"
+        android:hint="@string/name"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
@@ -77,7 +77,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="5dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Enter Price"
+        android:hint="@string/price"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
@@ -102,7 +102,7 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/for_logo"
         android:gravity="center"
-        android:text="Updatedevice"
+        android:text="@string/Updatedevice"
         android:textColor="@color/black"
         android:textSize="20dp" />
 

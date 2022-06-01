@@ -66,5 +66,5 @@
         android:layout_margin="5dp"
         android:background="@drawable/for_logo"
         android:textSize="25sp"
-        android:text="price"/>
+        android:text="@string/price1"/>
 </LinearLayout>
