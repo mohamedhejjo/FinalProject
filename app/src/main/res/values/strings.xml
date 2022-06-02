@@ -8,6 +8,13 @@
     <string name="app_name6">delete</string>
     <string name="app_name7">AddDevice</string>
     <string name="app_name8">AddColthes</string>
+    <string name="app_name9">Updatedevice</string>
+    <string name="app_name10">UpdateColthes</string>
+    <string name="app_name11">Updateprofinalcolthes</string>
+    <string name="app_name12">Updateprofinaldevice</string>
+    <string name="app_name13">delete device</string>
+    <string name="app_name14">delete colthes</string>
+    <string name="app_name15">delete final</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Login_administrator">Admin</string>
     <string name="Login_user">user</string>

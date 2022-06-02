@@ -11,31 +11,57 @@
         android:theme="@style/Theme.FinalProject" >
         <activity
             android:name=".user.Categories.Price"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/price1"
+            android:parentActivityName=".user.Categories.Price"
+            />
         <activity
             android:name=".user.Categories.activityuserfinal"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/Producer"
+            android:parentActivityName=".user.userCategories"
+            />
         <activity
             android:name=".admin.Clothesa.deletefinal"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/app_name15"
+            android:parentActivityName=".admin.Categories.delete"
+            />
         <activity
             android:name=".admin.Clothesa.deletedevice"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/app_name13"
+            android:parentActivityName=".admin.Categories.delete"
+            />
         <activity
             android:name=".admin.Clothesa.deletecolthes"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/app_name14"
+            android:parentActivityName=".admin.Categories.delete"
+            />
         <activity
             android:name=".admin.Clothesa.Updateprofinaldevice"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/app_name12"
+            android:parentActivityName=".admin.Categories.update"
+            />
         <activity
             android:name=".admin.Clothesa.Updateprofinalcolthes"
+            android:parentActivityName=".admin.Categories.update"
+            android:label="@string/app_name11"
+
             android:exported="false" />
         <activity
             android:name=".admin.Clothesa.Updatecolthes"
+            android:parentActivityName=".admin.Categories.update"
+            android:label="@string/app_name10"
             android:exported="false" />
         <activity
             android:name=".admin.Clothesa.Updatedevice"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/app_name9"
+            android:parentActivityName=".admin.Categories.update"
+            />
         <activity
             android:name=".admin.Clothesa.addcolthes"
             android:exported="false"
@@ -49,23 +75,23 @@
         <activity
             android:name=".admin.Categories.update"
             android:exported="false"
-            android:label="@string/app_name5"
+            android:label="@string/Update"
             android:parentActivityName=".admin.adminCategories" />
         <activity
             android:name=".admin.Categories.add"
             android:exported="false"
-            android:label="@string/app_name4"
+            android:label="@string/add"
             android:parentActivityName=".admin.adminCategories" />
         <activity
             android:name=".admin.Categories.delete"
             android:exported="false"
-            android:label="@string/app_name6"
+            android:label="@string/delete"
             android:parentActivityName=".admin.adminCategories" />
         <activity
             android:name=".admin.adminCategories"
             android:exported="false"
             android:label="@string/app_name3"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".admin.admin" />
         <activity
             android:name=".user.Clothes.userfemale"
             android:exported="false"

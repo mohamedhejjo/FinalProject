@@ -9,6 +9,13 @@
     <string name="app_name6">كتب</string>
     <string name="app_name7">ذكر</string>
     <string name="app_name8">انثى</string>
+    <string name="app_name9">تعديل الاجهزة</string>
+    <string name="app_name10">تعديل الملابس</string>
+    <string name="app_name11">تعديل النهائي للملابس</string>
+    <string name="app_name12">تعديل النهائي للجهاز</string>
+    <string name="app_name13">حذف الجهاز</string>
+    <string name="app_name14">حذف الملابس</string>
+    <string name="app_name15">الحذف النهائي</string>
     <string name="Login_administrator"> مشرف</string>
     <string name="Login_user">  مستخدم</string>
     <string name="Login"> تسجيل الدخول </string>
@@ -28,6 +35,7 @@
         <item>بلاستيشن</item>
 
     </string-array>
+
     <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
     <string name="email">ادخل الايميل</string>
     <string name="name">ادخل الاسم</string>
