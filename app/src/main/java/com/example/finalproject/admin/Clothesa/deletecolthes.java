@@ -25,9 +25,11 @@ public class deletecolthes extends AppCompatActivity {
         tabLayout=findViewById(R.id.tabLayoutadmindelete);
         viewPager=findViewById(R.id.viewpageradmindelete);
         tabLayout.setupWithViewPager(viewPager);
+        String Male=getString(R.string.male);
+        String Female=getString(R.string.female);
         adapterpaferadmin adapter=new adapterpaferadmin(getSupportFragmentManager());
-        adapter.addtaps(new Mytabadmin( new Fragmentdeletecolthesmale(),"Male"));
-        adapter.addtaps(new Mytabadmin(new Fragmentdeletecolthesfemale(),"Female"));
+        adapter.addtaps(new Mytabadmin( new Fragmentdeletecolthesmale(),Male));
+        adapter.addtaps(new Mytabadmin(new Fragmentdeletecolthesfemale(),Female));
         viewPager.setAdapter(adapter);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

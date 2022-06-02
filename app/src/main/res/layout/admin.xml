@@ -19,7 +19,10 @@
         android:id="@+id/tabLayoutadmin"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        app:tabTextColor="@color/red"
+        app:tabTextColor="@color/black"
+        app:tabRippleColor="#02E2FF"
+        app:tabSelectedTextColor="@color/red"
+        app:tabIndicatorColor="#00ABF8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">

@@ -17,7 +17,10 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayoutuser"
         android:layout_width="409dp"
-        app:tabTextColor="@color/red"
+        app:tabTextColor="@color/black"
+        app:tabRippleColor="#02E2FF"
+        app:tabIndicatorColor="#00ABF8"
+        app:tabSelectedTextColor="@color/red"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

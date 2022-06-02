@@ -24,10 +24,13 @@ public class user extends AppCompatActivity {
         tabLayout=findViewById(R.id.tabLayoutuser);
         viewPager=findViewById(R.id.viewpageruser);
         tabLayout.setupWithViewPager(viewPager);
+        String Login=getString(R.string.Login);
+        String Create=getString(R.string.Create);
+        String Update=getString(R.string.Update);
         adapterpaferadmin adapter=new adapterpaferadmin(getSupportFragmentManager());
-        adapter.addtaps(new Mytabadmin( new Fragmentuserlogin(),"Login"));
-        adapter.addtaps(new Mytabadmin(new FragmentuserCreate(),"Create"));
-        adapter.addtaps(new Mytabadmin(new FragmentuserUpdate(),"Update"));
+        adapter.addtaps(new Mytabadmin( new Fragmentuserlogin(),Login));
+        adapter.addtaps(new Mytabadmin(new FragmentuserCreate(),Create));
+        adapter.addtaps(new Mytabadmin(new FragmentuserUpdate(),Update));
         viewPager.setAdapter(adapter);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

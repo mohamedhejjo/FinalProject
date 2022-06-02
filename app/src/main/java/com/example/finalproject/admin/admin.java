@@ -25,9 +25,12 @@ public class admin extends AppCompatActivity {
         viewPager=findViewById(R.id.viewpageradmin);
         tabLayout.setupWithViewPager(viewPager);
         adapterpaferadmin adapter=new adapterpaferadmin(getSupportFragmentManager());
-        adapter.addtaps(new Mytabadmin(new Fragmentadminlogin(),"Login"));
-        adapter.addtaps(new Mytabadmin( new FragmentadminCreat(),"Create"));
-        adapter.addtaps(new Mytabadmin(new FragmentadminUpdate(),"Update"));
+        String Login=getString(R.string.Login);
+        String Create=getString(R.string.Create);
+        String Update=getString(R.string.Update);
+        adapter.addtaps(new Mytabadmin(new Fragmentadminlogin(),Login));
+        adapter.addtaps(new Mytabadmin( new FragmentadminCreat(),Create));
+        adapter.addtaps(new Mytabadmin(new FragmentadminUpdate(),Update));
         viewPager.setAdapter(adapter);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

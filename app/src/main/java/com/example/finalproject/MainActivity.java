@@ -39,9 +39,11 @@ public class MainActivity extends AppCompatActivity {
         tabLayout=findViewById(R.id.tabLayouthome);
         viewPager=findViewById(R.id.viewpagerhome);
         tabLayout.setupWithViewPager(viewPager);
+        String admin=getString(R.string.app_name1);
+        String user=getString(R.string.app_name2);
         adapterpaferadmin adapter=new adapterpaferadmin(getSupportFragmentManager());
-        adapter.addtaps(new Mytabadmin( new mainadmin(),"admin"));
-        adapter.addtaps(new Mytabadmin(new mainuser(),"user"));
+        adapter.addtaps(new Mytabadmin( new mainadmin(),admin));
+        adapter.addtaps(new Mytabadmin(new mainuser(),user));
         viewPager.setAdapter(adapter);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

@@ -23,9 +23,11 @@ public class Updatecolthes extends AppCompatActivity {
         tabLayout=findViewById(R.id.tabLayoutadminUpdate);
         viewPager=findViewById(R.id.viewpageradminUpdate);
         tabLayout.setupWithViewPager(viewPager);
+        String Male=getString(R.string.male);
+        String Female=getString(R.string.female);
         adapterpaferadmin adapter=new adapterpaferadmin(getSupportFragmentManager());
-        adapter.addtaps(new Mytabadmin( new FragmentUpdatecolthesmale(),"Male"));
-        adapter.addtaps(new Mytabadmin(new FragmentUpdatecolthesfemale(),"Female"));
+        adapter.addtaps(new Mytabadmin( new FragmentUpdatecolthesmale(),Male));
+        adapter.addtaps(new Mytabadmin(new FragmentUpdatecolthesfemale(),Female));
         viewPager.setAdapter(adapter);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
