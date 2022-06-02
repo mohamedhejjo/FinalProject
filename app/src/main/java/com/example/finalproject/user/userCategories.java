@@ -19,22 +19,6 @@ public class userCategories extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewcategories);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-     /*   ImageButton imageclothes=findViewById(R.id.Clotheshome);
-        ImageButton imagecomputer=findViewById(R.id.deviceshome);
-        ImageButton imagebook=findViewById(R.id.bookhome);
-
-        imageclothes.setOnClickListener(v -> {
-            Intent intent=new Intent(getApplicationContext(), clothes.class);
-            startActivity(intent);
-        });
-        imagecomputer.setOnClickListener(v -> {
-            Intent intent=new Intent(getApplicationContext(), devices.class);
-            startActivity(intent);
-        });
-        imagebook.setOnClickListener(v -> {
-            Intent intent=new Intent(getApplicationContext(), book.class);
-            startActivity(intent);
-        });*/
         ArrayList<ClassCotr> data=new ArrayList<>();
         String clothes= getString(R.string.app_name4);
         String devices= getString(R.string.app_name5);

@@ -17,8 +17,8 @@
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activity_updatecolthes.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/activityuserfinal.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/add.xml" value="0.15" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/addcoltes.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/adddevices.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/addcoltes.xml" value="0.1" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/adddevices.xml" value="0.1" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/admin.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/admincategories.xml" value="0.15" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/book.xml" value="0.20416666666666666" />
@@ -53,12 +53,12 @@
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragment_updateprodevice.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentadd.xml" value="0.1" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentadmincreate.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentadminlogin.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentadminupdate.xml" value="0.19701086956521738" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentadminlogin.xml" value="0.1" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentadminupdate.xml" value="0.1" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentcolthesadd.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentdevicesadd.xml" value="0.15" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentusercreate.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentuserlogin.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/fragmentuserlogin.xml" value="0.1" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/homeadmin.xml" value="0.1983695652173913" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/itemde.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/itemshowprice.xml" value="0.22" />
@@ -71,9 +71,9 @@
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/update_colthesmale.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/updatedevice.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/updateprofinal.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/updateprofinalcolthes.xml" value="0.18568840579710144" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/updateprofinaldevice.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/updateuser.xml" value="0.18" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/updateprofinalcolthes.xml" value="0.1" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/updateprofinaldevice.xml" value="0.1" />
+        <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/updateuser.xml" value="0.1" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/user.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/userfemale.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/FinalProject/app/src/main/res/layout/usermale.xml" value="0.20416666666666666" />

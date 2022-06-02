@@ -64,6 +64,7 @@
         app:startIconDrawable="@drawable/number">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adv1"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:maxLength="20" />
@@ -90,6 +91,7 @@
         app:startIconDrawable="@drawable/number">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adv2"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:maxLength="20" />
@@ -100,10 +102,10 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
+        android:textColor="@color/white"
         android:background="@drawable/for_logo"
         android:gravity="center"
         android:text="@string/adddevice"
-        android:textColor="@color/black"
         android:textSize="20dp" />
 
 

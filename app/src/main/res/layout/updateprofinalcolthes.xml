@@ -88,6 +88,7 @@
         app:startIconDrawable="@drawable/number">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ufco1"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:maxLength="20" />
@@ -114,6 +115,7 @@
         app:startIconDrawable="@drawable/number">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ufco2"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:maxLength="20" />
@@ -127,7 +129,7 @@
         android:background="@drawable/for_logo"
         android:gravity="center"
         android:text="@string/Updateclothes"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20dp" />
 
 </LinearLayout>

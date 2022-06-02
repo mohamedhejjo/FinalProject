@@ -24,18 +24,19 @@ EditText email,password;
                              Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragmentuserlogin, container, false);
         Button btnuser=view.findViewById(R.id.userlogin);
-//        email=view.findViewById(R.id.fieldemaillogin);
-//        password=view.findViewById(R.id.fieldpassuserlogin);
+        email=view.findViewById(R.id.edt1);
+        password=view.findViewById(R.id.edt2);
         btnuser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                String email1=email.getText().toString();
-//                String pass1=password.getText().toString();
-//                if (email1.equals("")){
-//                    Toast.makeText(getContext(), "Enter email", Toast.LENGTH_SHORT).show();
-//                }else if(pass1.equals("")) {
-//                    Toast.makeText(getContext(), "Enter password", Toast.LENGTH_SHORT).show();  }
-//                else {}
+                String email1=email.getText().toString();
+                String pass1=password.getText().toString();
+      if (email1.isEmpty()){
+        email.setError("can not be empty");
+                }else if(pass1.isEmpty()) {
+        password.setError("can not be empty");  }
+
+                else {}
 
                 Intent intent = new Intent(getActivity().getBaseContext(), userCategories.class);
                 startActivity(intent);

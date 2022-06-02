@@ -21,31 +21,31 @@ public class FragmentuserUpdate extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.updateuser, container, false);
-        btn=view.findViewById(R.id.admincreate);
-//        nameold=view.findViewById(R.id.fieldnameadminold);
-//        passwordold=view.findViewById(R.id.fieldidentadminold);
-//        namenew=view.findViewById(R.id.fieldnumberadminnew);
-//        passwordnew=view.findViewById(R.id.fieldpassadminnew);
-//        btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-                //              String nameold1=nameold.getText().toString();
-//                String passwordold1=passwordold.getText().toString();
-                //              String namenew1=namenew.getText().toString();
-//                String passwordnew1=passwordnew.getText().toString();
-//                if (numberold1.equals("")){
-//                    Toast.makeText(getApplicationContext(), "Enter nameold", Toast.LENGTH_SHORT).show();  }
-//            else if(passwordold1.equals("")){
-//                    Toast.makeText(getApplicationContext(), "Enter passwordold", Toast.LENGTH_SHORT).show();  }
-//             else if(numbernew1.equals("")){
-////                    Toast.makeText(getApplicationContext(), "Enter namenew", Toast.LENGTH_SHORT).show();  }
-//    else if(passwordnew1.equals("")){
-//                   Toast.makeText(getApplicationContext(), "Enter passwordnew", Toast.LENGTH_SHORT).show();  }
-//       else{}
-//            }
+        btn=view.findViewById(R.id.updateuser);
+        nameold=view.findViewById(R.id.uuser1);
+        passwordold=view.findViewById(R.id.uuser3);
+        namenew=view.findViewById(R.id.uuser2);
+        passwordnew=view.findViewById(R.id.uuser4);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                              String nameold1=nameold.getText().toString();
+                String passwordold1=passwordold.getText().toString();
+                              String namenew1=namenew.getText().toString();
+                String passwordnew1=passwordnew.getText().toString();
+                         if (nameold1.isEmpty()){
+                    nameold.setError("can not be empty");  }
+                    else if(passwordold1.isEmpty()){
+                    passwordold.setError("can not be empty");  }
+             else if(namenew1.isEmpty()){
+                    namenew.setError("can not be empty");  }
+    else if(passwordnew1.isEmpty()){
+                    passwordnew.setError("can not be empty");  }
+       else{}
+            }
 
-//            }
-//        });
+
+        });
         return view;
     }
 }

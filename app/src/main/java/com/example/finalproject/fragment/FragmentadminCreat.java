@@ -23,23 +23,23 @@ public class FragmentadminCreat extends Fragment {
                              Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.createadmin, container, false);
          btnlogin=view.findViewById(R.id.admincreate);
-//        email=view.findViewById(R.id.emailadmin);
-//        password=view.findViewById(R.id.fieldpassadmin);
-//        number=view.findViewById(R.id.fieldnameadmin);
+        email=view.findViewById(R.id.ed2useradmin);
+        password=view.findViewById(R.id.ed3useradmin);
+        number=view.findViewById(R.id.ed1useradmin);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //              String number1=number.getText().toString();
-                //              String email1=email.getText().toString();
-//                String password1=password.getText().toString();
-//                if (email1.equals("")){
-//                    Toast.makeText(getApplicationContext(), "Enter email", Toast.LENGTH_SHORT).show();  }
-//            else if(password1.equals("")){
-//                    Toast.makeText(getApplicationContext(), "Enter password", Toast.LENGTH_SHORT).show();  }
-//             else if(number1.equals("")){
-////                    Toast.makeText(getApplicationContext(), "Enter number", Toast.LENGTH_SHORT).show();  }
-////            else{}
-//            }
+                              String number1=number.getText().toString();
+                              String email1=email.getText().toString();
+                String password1=password.getText().toString();
+                if (email1.isEmpty()){
+           email.setError("can not be empty"); }
+                else if (number1.isEmpty()){
+          number.setError("can not be empty");  }
+              else if (password1.isEmpty()){
+            password.setError("can not be empty");  }
+           else{}
+
 
             }
         });

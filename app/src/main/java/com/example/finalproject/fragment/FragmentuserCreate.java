@@ -29,6 +29,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class FragmentuserCreate extends Fragment {
     private FirebaseAuth firebaseAuth;
     private  FirebaseFirestore firebaseFirestore;
+    EditText name,email,pass;
+    Button btn;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -36,33 +38,33 @@ public class FragmentuserCreate extends Fragment {
         View v= inflater.inflate(R.layout.fragmentusercreate, container, false);
 
         firebaseAuth=FirebaseAuth.getInstance();
-//        EditText name=v.findViewById(R.id.ed1user);
-//        EditText email=v.findViewById(R.id.ed2user);
-//        EditText pass=v.findViewById(R.id.ed3user);
-//        Button bnt=v.findViewById(R.id.usercreate);
-//        bnt.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                String email1=email.getText().toString();
-//                String pass1=pass.getText().toString();
-//                String name1=name.getText().toString();
-//                if (email1.equals("")){
-//                                     Toast.makeText(getContext(), "Enter email", Toast.LENGTH_SHORT).show();
-//                }else if(pass1.equals("")) {
-//                                  Toast.makeText(getContext(), "Enter password", Toast.LENGTH_SHORT).show();  }
-//                else if(name1.equals("")){
-//              Toast.makeText(getContext(), "Enter name", Toast.LENGTH_SHORT).show();  }
-//                else{
-//                firebaseAuth.createUserWithEmailAndPassword(email1,pass1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<AuthResult> task) {
-//                        if (task.isSuccessful()) {
-//                            Toast.makeText(getContext(), "yes", Toast.LENGTH_SHORT).show();
-//                        } else {
-//                            Toast.makeText(getContext(), "No", Toast.LENGTH_SHORT).show();
-//
-//                        }
-//                    } });
-//                } }  });
+         name=v.findViewById(R.id.ed1user);
+         email=v.findViewById(R.id.ed2user);
+         pass=v.findViewById(R.id.ed3user);
+        btn=v.findViewById(R.id.usercreate);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String email1=email.getText().toString();
+                String pass1=pass.getText().toString();
+                String name1=name.getText().toString();
+                if (email1.isEmpty()){
+           email.setError("can not be empty");
+              } else if(pass1.isEmpty()) {
+           pass.setError("can not be empty");}
+              else if(name1.isEmpty()) {
+          name.setError("can not be empty");}
+                else{
+                firebaseAuth.createUserWithEmailAndPassword(email1,pass1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(getContext(), "yes", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(getContext(), "No", Toast.LENGTH_SHORT).show();
+
+                        }
+                    } });
+                } }  });
     return v;
     }}

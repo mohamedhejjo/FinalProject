@@ -32,6 +32,7 @@
         app:startIconDrawable="@drawable/email">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt1"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:maxLength="20" />
@@ -58,6 +59,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt2"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:inputType="numberPassword"
@@ -69,6 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_margin="10dp"
+        android:textColor="@color/white"
         android:layout_marginBottom="324dp"
         android:background="@drawable/fragmentuttoncaolor"
         android:text="@string/Login"

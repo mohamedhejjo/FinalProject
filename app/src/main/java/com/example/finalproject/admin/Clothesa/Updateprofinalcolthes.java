@@ -40,22 +40,22 @@ public class Updateprofinalcolthes extends AppCompatActivity {
         spinner1 = findViewById(R.id.spinner11);
         spinner2 = findViewById(R.id.spinner22);
         addimage=findViewById(R.id.updateimage);
-//        name=findViewById(R.id.nameupdate);
-//        price=findViewById(R.id.priceupdate);
-//        update=findViewById(R.id.Updatecreate);
-        //        update.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                String name1=name.getText().toString();
-//                String price1=price.getText().toString();
-//                if (name1.equals("")){
-//                    Toast.makeText(getApplicationContext(), "Enter name", Toast.LENGTH_SHORT).show();  }
-//            else if(price1.equals("")){
-//                    Toast.makeText(getApplicationContext(), "Enter Price", Toast.LENGTH_SHORT).show();  }
-//            else{}
-//            }
-//
-//        });
+        name=findViewById(R.id.ufco1);
+        price=findViewById(R.id.ufco2);
+        update=findViewById(R.id.Updatecreate);
+                update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String name1=name.getText().toString();
+                String price1=price.getText().toString();
+                  if (name1.isEmpty()){
+           name.setError("can not be empty");  }
+            else if (price1.isEmpty()){
+        price.setError("can not be empty");  }
+ else{}
+            }
+
+        });
 
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -96,18 +96,18 @@ public class Updateprofinalcolthes extends AppCompatActivity {
 
             }
         });
-//        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-//                selected2 = adapterView.getItemAtPosition(i).toString();
-//
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> adapterView) {
-//
-//            }
-//        });
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                selected2 = adapterView.getItemAtPosition(i).toString();
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
     }
     public void Mohamed(View view) {

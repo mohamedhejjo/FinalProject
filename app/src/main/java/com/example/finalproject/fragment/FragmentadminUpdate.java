@@ -22,29 +22,32 @@ public class FragmentadminUpdate extends Fragment {
                              Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragmentadminupdate, container, false);
         btn=view.findViewById(R.id.admincreate);
-//        numberold=view.findViewById(R.id.fieldnameadminold);
-//        passwordold=view.findViewById(R.id.fieldidentadminold);
-//        numbernew=view.findViewById(R.id.fieldnumberadminnew);
-//        passwordnew=view.findViewById(R.id.fieldpassadminnew);
+        numberold=view.findViewById(R.id.uadmin1);
+        passwordold=view.findViewById(R.id.uadmin3);
+        numbernew=view.findViewById(R.id.uadmin2);
+        passwordnew=view.findViewById(R.id.uadmin4);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //              String numberold1=numberold.getText().toString();
-//                String passwordold1=passwordold.getText().toString();
-                //              String numbernew1=numbernew.getText().toString();
-//                String passwordnew1=passwordnew.getText().toString();
-//                if (numberold1.equals("")){
-//                    Toast.makeText(getApplicationContext(), "Enter numberold", Toast.LENGTH_SHORT).show();  }
-//            else if(passwordold1.equals("")){
-//                    Toast.makeText(getApplicationContext(), "Enter passwordold", Toast.LENGTH_SHORT).show();  }
-//             else if(numbernew1.equals("")){
-////                    Toast.makeText(getApplicationContext(), "Enter numbernew", Toast.LENGTH_SHORT).show();  }
-//    else if(passwordnew1.equals("")){
-//                   Toast.makeText(getApplicationContext(), "Enter passwordnew", Toast.LENGTH_SHORT).show();  }
-//       else{}
-//            }
+                              String numberold1=numberold.getText().toString();
+                String passwordold1=passwordold.getText().toString();
+                              String numbernew1=numbernew.getText().toString();
+                String passwordnew1=passwordnew.getText().toString();
+          if (numberold1.isEmpty()){
+         numberold.setError("can not be empty"); }
+            else if(passwordold1.isEmpty()){
+         passwordold.setError("can not be empty");  }
 
+             else if(numbernew1.isEmpty()){
+         numbernew.setError("can not be empty");  }
+
+    else if(passwordnew1.isEmpty()){
+         passwordnew.setError("can not be empty"); }
+
+       else{}
             }
+
+
         });
         return view;
     }

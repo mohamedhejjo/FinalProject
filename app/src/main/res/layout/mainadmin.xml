@@ -44,7 +44,7 @@
         android:background="@drawable/for_logo"
         android:padding="10dp"
         android:text="@string/Login_administrator"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
